@@ -34,14 +34,14 @@
     }
     & :hover {
       border-color: #809fb7;
-      color: #809fb7;
+      color: #FF0000;;
     }
     .branch-holder {
       .content-main {
         padding-bottom: 8px;
       }
       & :hover {
-        color: #809fb7;
+        color:#FF0000;
         span {
           padding-left: 13px;
           transition: all 0.2s;
@@ -72,6 +72,9 @@
     {
       padding-left: 10px;
     }
+    .link:hover{
+      color:#FF0000;
+    }
     padding-bottom: 20px;
   }
   .social
@@ -96,4 +99,16 @@
       opacity: 0.7;
     }
   }
+}
+.fa-facebook-f:hover{
+color: #4267B2;
+}
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+.fa-instagram:hover{
+  color: #E44A4A;
+}
+.fa-github:hover{
+  color: #24292E;
 }

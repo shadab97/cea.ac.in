@@ -14,10 +14,33 @@
       .nav-link
       {
         color: #fff;
-        font-size: 0.7em;
+        font-size: .9em;
         text-transform: uppercase;
         font-weight: lighter;
         opacity: 0.8;
+      }
+    }
+  }
+}
+.top-nav
+{
+  position: relative;
+  z-index: 9999;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $color-blue;
+  .nav
+  {
+    .nav-item:hover
+    {
+      padding-top: 0px;
+      
+      .nav-link:hover
+      {
+        color:#FF0000;
+        //font-weight: 500;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
       }
     }
   }
@@ -26,6 +49,11 @@
   .navbar-brand
   {
     color: #fff;
+    font-weight: bold;
+  }
+  .navbar-brand:hover
+  {
+    color: #FF0000;
     font-weight: bold;
   }
   margin-top: 80px;
@@ -38,6 +66,9 @@
   & :hover >{
     .dropdown-menu {
       display: block;
+    }
+    .dropdown-item{
+      color:#FF0000;
     }
   }
   transition: 0.5s ease;
@@ -76,6 +107,9 @@
       }
     }
   }
+  
+}.navbar-toggler-icon {
+  color:#fff;
 }
 .other-navbar {
   color: #000 !important;
@@ -93,3 +127,17 @@
     }
   }
 }
+.navbar-nav
+  {
+    .nav-item:hover
+    {
+      //border-left:2px solid #FF0000;
+      .nav-link:hover
+      {
+        text-decoration: underline;
+        color:#FF0000;
+        
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+      }
+    }
+  }
